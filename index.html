@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="preload" as="image" href="hero-desktop.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="hero-mobile.jpg" fetchpriority="high" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="hero-desktop.webp" fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image" href="hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)" type="image/webp">
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,12 +131,12 @@
     will-change: transform;
     transform: translateZ(0);
     position:absolute;inset:0;
-    background-image: url('hero-desktop.jpg');
+    background-image: url('hero-desktop.webp');
     background-size:cover;background-position:left center;
   }
   @media (max-width: 768px) {
     .hero-bg {
-      background-image: url('hero-mobile.jpg');
+      background-image: url('hero-mobile.webp');
       background-position: center 35%;
     }
     .hero-inner {
@@ -163,7 +163,7 @@
       display: none;
     }
     #about-photo {
-      content: url('about-mobile.jpg');
+      content: url('about-mobile.webp');
     }
   }
 
@@ -525,7 +525,10 @@
 <section class="about" id="sobre">
   <div class="about-grid">
     <div class="about-img reveal">
-      <img src="about-desktop.jpg" alt="Dra. Giovana Gabriele no escritório" loading="lazy" decoding="async" id="about-photo">
+      <picture>
+        <source srcset="about-desktop.webp" type="image/webp">
+        <img src="about-desktop.jpg" alt="Dra. Giovana Gabriele no escritório" loading="lazy" decoding="async" id="about-photo">
+      </picture>
     </div>
     <div class="about-copy reveal">
       <div class="eyebrow on-dark">Sobre Mim</div>
@@ -599,7 +602,10 @@
       </div>
     </div>
     <div class="testi-portrait reveal">
-      <img src="photo-escritorio2.jpg" alt="Dra. Giovana Gabriele" loading="lazy" decoding="async">
+      <picture>
+        <source srcset="photo-escritorio2.webp" type="image/webp">
+        <img src="photo-escritorio2.jpg" alt="Dra. Giovana Gabriele" loading="lazy" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
@@ -613,7 +619,10 @@
       <a href="https://wa.me/5511989777787?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn-primary" style="color:#151009;">Agendar Consulta via WhatsApp</a>
     </div>
     <div class="cta-img reveal">
-      <img src="photo-escritorio2.jpg" alt="Dra. Giovana Gabriele" loading="lazy" decoding="async">
+      <picture>
+        <source srcset="photo-escritorio2.webp" type="image/webp">
+        <img src="photo-escritorio2.jpg" alt="Dra. Giovana Gabriele" loading="lazy" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
