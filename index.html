@@ -125,14 +125,14 @@
   /* ===== HERO ===== */
   .hero{
     position:relative;min-height:100vh;display:flex;align-items:center;
-    background:var(--ink);overflow:hidden;
+    background:var(--ink);overflow:hidden;padding-top:70px;
   }
   .hero-bg{
     will-change: transform;
     transform: translateZ(0);
     position:absolute;inset:0;
     background-image: url('hero-desktop.jpg');
-    background-size:cover;background-position:right center;
+    background-size:cover;background-position:right 85% center;
   }
   @media (max-width: 768px) {
     .hero-bg {
@@ -140,7 +140,7 @@
       background-position: center 35%;
     }
     .hero-inner {
-      padding: 100px 20px 50px;
+      padding: 90px 20px 50px;
     }
     .hero h1 {
       font-size: clamp(24px, 6vw, 38px);
@@ -165,9 +165,9 @@
 
   .hero-bg::after{
     content:"";position:absolute;inset:0;
-    background:linear-gradient(100deg, rgba(15,11,6,0.92) 5%, rgba(15,11,6,0.65) 35%, rgba(15,11,6,0.15) 58%, rgba(15,11,6,0.05) 100%);
+    background:linear-gradient(105deg, rgba(15,11,6,0.94) 0%, rgba(15,11,6,0.78) 25%, rgba(15,11,6,0.35) 45%, rgba(15,11,6,0.08) 65%, rgba(15,11,6,0) 100%);
   }
-  .hero-inner{position:relative;z-index:2;width:100%;padding:180px 32px 60px;max-width:1240px;margin:0 auto;}
+  .hero-inner{position:relative;z-index:2;width:100%;padding:120px 32px 70px;max-width:1240px;margin:0 auto;}
   .hero-inner .eyebrow{color:var(--bronze-light);}
   .hero h1{
     color:var(--cream);font-size:clamp(32px,4.5vw,62px);line-height:1.1;
@@ -392,7 +392,7 @@
     .wrap{padding:0 22px;}
     .nav{padding:14px 20px;}
     .brand img{height:32px;}
-    .hero-inner{padding:160px 22px 50px;}
+    .hero-inner{padding:110px 22px 50px;}
     .hero h1{font-size:clamp(28px,5vw,48px);max-width:100%;}
     .hero p{max-width:100%;}
     .btn-outline{margin-left:0;margin-top:14px;display:block;text-align:center;}
