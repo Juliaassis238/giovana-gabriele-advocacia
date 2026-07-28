@@ -161,6 +161,9 @@
     .hero-scroll {
       display: none;
     }
+    #about-photo {
+      content: url('about-mobile.jpg');
+    }
   }
 
   .hero-bg::after{
@@ -234,12 +237,12 @@
   }
   .about-img{position:relative;min-height:560px;}
   .about-img img{
-    width:100%;height:100%;object-fit:cover;object-position:center 15%;position:absolute;inset:0;
+    width:100%;height:100%;object-fit:cover;object-position:center 30%;position:absolute;inset:0;
     filter:saturate(0.95) contrast(1.04) brightness(1.02);
   }
   .about-img::after{
     content:"";position:absolute;inset:0;
-    background:linear-gradient(90deg, transparent 70%, var(--ink) 100%);
+    background:linear-gradient(90deg, transparent 65%, var(--ink) 100%);
   }
   .about-copy{
     padding:100px 64px 100px 72px;
@@ -402,7 +405,7 @@
     .area-card:nth-child(2n){padding-left:0;}
     .about-copy{padding:56px 24px;}
     .about-img{min-height:340px;}
-    .about-img img{object-position:center 18%;}
+    .about-img img{object-position:center 25%;}
     .dif{padding:80px 0;}
     .dif-grid{grid-template-columns:1fr;row-gap:44px;}
     .testi{padding:90px 0;}
@@ -521,7 +524,7 @@
 <section class="about" id="sobre">
   <div class="about-grid">
     <div class="about-img reveal">
-      <img src="photo-escritorio.jpg" alt="Dra. Giovana Gabriele no escritório" loading="lazy" decoding="async">
+      <img src="about-desktop.jpg" alt="Dra. Giovana Gabriele no escritório" loading="lazy" decoding="async" id="about-photo">
     </div>
     <div class="about-copy reveal">
       <div class="eyebrow on-dark">Sobre Mim</div>
