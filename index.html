@@ -132,7 +132,7 @@
     transform: translateZ(0);
     position:absolute;inset:0;
     background-image: url('hero-desktop.jpg');
-    background-size:cover;background-position:right 85% center;
+    background-size:cover;background-position:left center;
   }
   @media (max-width: 768px) {
     .hero-bg {
@@ -141,6 +141,7 @@
     }
     .hero-inner {
       padding: 90px 20px 50px;
+      align-items: flex-end;
     }
     .hero h1 {
       font-size: clamp(24px, 6vw, 38px);
@@ -168,9 +169,9 @@
 
   .hero-bg::after{
     content:"";position:absolute;inset:0;
-    background:linear-gradient(105deg, rgba(15,11,6,0.94) 0%, rgba(15,11,6,0.78) 25%, rgba(15,11,6,0.35) 45%, rgba(15,11,6,0.08) 65%, rgba(15,11,6,0) 100%);
+    background:linear-gradient(270deg, rgba(15,11,6,0.94) 0%, rgba(15,11,6,0.85) 15%, rgba(15,11,6,0.6) 30%, rgba(15,11,6,0.25) 50%, rgba(15,11,6,0) 70%);
   }
-  .hero-inner{position:relative;z-index:2;width:100%;padding:120px 32px 70px;max-width:1240px;margin:0 auto;}
+  .hero-inner{position:relative;z-index:2;width:100%;padding:100px 32px 70px;max-width:1240px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;}
   .hero-inner .eyebrow{color:var(--bronze-light);}
   .hero h1{
     color:var(--cream);font-size:clamp(32px,4.5vw,62px);line-height:1.1;
@@ -328,7 +329,7 @@
   }
   .cta-img{position:relative;overflow:hidden;min-height:340px;}
   .cta-img img{
-    width:100%;height:100%;object-fit:cover;position:absolute;inset:0;
+    width:100%;height:100%;object-fit:cover;object-position:center 25%;position:absolute;inset:0;
   }
 
   /* ===== FOOTER ===== */
@@ -395,7 +396,7 @@
     .wrap{padding:0 22px;}
     .nav{padding:14px 20px;}
     .brand img{height:32px;}
-    .hero-inner{padding:110px 22px 50px;}
+    .hero-inner{padding:90px 22px 50px;align-items:flex-end;}
     .hero h1{font-size:clamp(28px,5vw,48px);max-width:100%;}
     .hero p{max-width:100%;}
     .btn-outline{margin-left:0;margin-top:14px;display:block;text-align:center;}
@@ -405,7 +406,7 @@
     .area-card:nth-child(2n){padding-left:0;}
     .about-copy{padding:56px 24px;}
     .about-img{min-height:340px;}
-    .about-img img{object-position:center 25%;}
+    .about-img img{object-position:center 30%;}
     .dif{padding:80px 0;}
     .dif-grid{grid-template-columns:1fr;row-gap:44px;}
     .testi{padding:90px 0;}
